@@ -7,19 +7,24 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="app">
-    {{ message }}
-  </div>
+  <div id="app"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script>
-    // vue 인스턴스 new Vue();
-    new Vue({
-      el: '#app',
+    // 생성자 안에 들어가는 값은 객체로 선언
+    var vm = new Vue({
+      el: '#app', // element
       data: {
-        message: 'Hello Vue.js'
+        message: 'hi'
+      },
+      methods: {
+
+      },
+      created: function() {
+        
       }
-    })
+    });
+
   </script>
 </body>
 </html>
